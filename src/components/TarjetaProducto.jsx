@@ -5,7 +5,7 @@ function TarjetaProducto({producto}) {
     const [enCarrito, setEnCarrito] = useState(false)
 
     return <div className="card m-3">
-        <img src={`${process.env.PUBLIC_URL}${producto.imagen}`} 
+        <img src={`${process.env.PUBLIC_URL}${producto.img}`} 
   alt={producto.nombre} className="card-img-top"/>
         
         <div className="card-body">            
