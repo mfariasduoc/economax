@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "nombre": "Leche Entera 1 Litro",
+        "img": "/img/leche-entera.jpg",
+        "precio": 1190
+    },
+    {
+        "id": 2,
+        "nombre": "Pan Hallulla 1kg",
+        "img": "/img/pan-hallulla.jpg",
+        "precio": 1890
+    },
+    {
+        "id": 3,
+        "nombre": "Huevos Blancos Red 12 Unidades",
+        "img": "/img/huevos-blancos.jpg",
+        "precio": 2490
+    },
+    {
+        "id": 4,
+        "nombre": "Arroz Grado 1 1kg",
+        "img": "/img/arroz-grado1.jpg",
+        "precio": 1450
+    },
+    {
+        "id": 5,
+        "nombre": "Fideos Spaghetti 400g",
+        "img": "/img/fideos-spaghetti.jpg",
+        "precio": 890
+    },
+    {
+        "id": 6,
+        "nombre": "Aceite Vegetal 1 Litro",
+        "img": "/img/aceite-vegetal.jpg",
+        "precio": 2190
+    },
+    {
+        "id": 7,
+        "nombre": "Azúcar Granulada 1kg",
+        "img": "/img/azucar-granulada.jpg",
+        "precio": 1350
+    },
+    {
+        "id": 8,
+        "nombre": "Café Tradicional Frasco 100g",
+        "img": "/img/cafe-tradicional.jpg",
+        "precio": 4990
+    },
+    {
+        "id": 9,
+        "nombre": "Atún en Lomo Lata 170g",
+        "img": "/img/atun-lomo.jpg",
+        "precio": 1690
+    },
+    {
+        "id": 10,
+        "nombre": "Salsa de Tomate 200g",
+        "img": "/img/salsa-tomate.jpg",
+        "precio": 650
+    },
+    {
+        "id": 11,
+        "nombre": "Queso Gauda Laminado 250g",
+        "img": "/img/queso-gauda.jpg",
+        "precio": 2990
+    },
+    {
+        "id": 12,
+        "nombre": "Mantequilla con Sal 250g",
+        "img": "/img/mantequilla.jpg",
+        "precio": 2390
+    },
+    {
+        "id": 13,
+        "nombre": "Yogurt Batido Surtido 4 Unidades",
+        "img": "/img/yogurt-surtido.jpg",
+        "precio": 1590
+    },
+    {
+        "id": 14,
+        "nombre": "Detergente Líquido 3 Litros",
+        "img": "/img/detergente-liquido.jpg",
+        "precio": 7490
+    },
+    {
+        "id": 15,
+        "nombre": "Papel Higiénico 4 Rollos Doble Hoja",
+        "img": "/img/papel-higienico.jpg",
+        "precio": 1790
+    },
+    {
+        "id": 16,
+        "nombre": "Lavaloza Líquido 750ml",
+        "img": "/img/lavaloza.jpg",
+        "precio": 1890
+    },
+    {
+        "id": 17,
+        "nombre": "Bebida Cola 1.5 Litros",
+        "img": "/img/bebida-cola.jpg",
+        "precio": 1990
+    },
+    {
+        "id": 18,
+        "nombre": "Jugo en Polvo Sabor Naranja",
+        "img": "/img/jugo-polvo.jpg",
+        "precio": 350
+    },
+    {
+        "id": 19,
+        "nombre": "Cereales de Avena 500g",
+        "img": "/img/avena-tradicional.jpg",
+        "precio": 1690
+    },
+    {
+        "id": 20,
+        "nombre": "Galletas de Soda Pack 3 Unidades",
+        "img": "/img/galletas-soda.jpg",
+        "precio": 1290
+    }
+]
