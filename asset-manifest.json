@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/economax/static/css/main.5a0b7b0d.css",
-    "main.js": "/economax/static/js/main.28904d04.js",
+    "main.js": "/economax/static/js/main.3309ebd1.js",
     "static/js/453.69ef2d57.chunk.js": "/economax/static/js/453.69ef2d57.chunk.js",
     "index.html": "/economax/index.html",
     "main.5a0b7b0d.css.map": "/economax/static/css/main.5a0b7b0d.css.map",
-    "main.28904d04.js.map": "/economax/static/js/main.28904d04.js.map",
+    "main.3309ebd1.js.map": "/economax/static/js/main.3309ebd1.js.map",
     "453.69ef2d57.chunk.js.map": "/economax/static/js/453.69ef2d57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a0b7b0d.css",
-    "static/js/main.28904d04.js"
+    "static/js/main.3309ebd1.js"
   ]
 }
