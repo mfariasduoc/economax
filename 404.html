@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Econo-Max</title>
+    <script>
+        var segmentCount = 1;
+
+        var l = window.location;
+        var redirect = l.pathname
+            .split('/')
+            .slice(0, 1 + segmentCount)
+            .join('/') + '/?/' +
+            l.pathname.slice(1 + segmentCount)
+                .replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash;
+
+        l.replace(redirect);
+    </script>
+</head>
+<body>
+    Redirigiendo a Econo-Max...
+</body>
+</html>
