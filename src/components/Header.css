@@ -1,21 +1,79 @@
-.header {
-    background-color: khaki;
-    padding: 15px;
-    margin: 5px;
-}
 
-/* color de fondo de la barra de navegacion de bootstrap */
-.navbar {
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1126px;
+    min-height: 75px;
     background-color: #e3f2fd;
+    border-top: 2px solid #b8d8ed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 5px;
+    z-index: 1000;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* estilos para los enlaces del menu horizontal y responsivo */
-.navbar-nav .nav-link {
-    font-size: large;
-    color: #333 !important;
-    transition: font-weight 0.2s ease;
+.menu-enlace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.navbar-nav .nav-link:hover {
+.menu-enlace:hover {
+    color: #0d6efd;
+}
+
+.menu-enlace.activo {
+    color: #0d6efd;
     font-weight: bold;
+}
+
+.menu-icono {
+    font-size: 22px;
+}
+
+.menu-texto {
+    text-align: center;
+}
+
+.app-container {
+    padding-bottom: 90px;
+}
+
+@media (max-width: 480px) {
+    .menu-inferior {
+        min-height: 68px;
+        padding: 6px 2px;
+    }
+
+    .menu-enlace {
+        min-width: 0;
+        font-size: 9px;
+        gap: 3px;
+    }
+
+    .menu-icono {
+        font-size: 18px;
+    }
+
+    .menu-texto {
+        line-height: 1.1;
+        overflow-wrap: anywhere;
+    }
+
+    .app-container {
+        padding-bottom: 80px;
+    }
 }

@@ -1,35 +1,36 @@
-import "./Header.css"
-import {Link} from 'react-router-dom'
+
+import './Header.css'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
-    return <div className="header navbar navbar-expand-sm">
-        <div className="container-fluid">
-            <a className="navbar-brand title" href="#">Productos</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-0 mb-lg-0">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link active" aria-current="page">Inicio</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/productos" className="nav-link active" aria-current="page">Productos</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/como-comprar" className="nav-link">Cómo Comprar</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/quienes-somos" className="nav-link">Quiénes Somos</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/contacto" className="nav-link active" aria-current="page">Contacto</Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    const enlaces = [
+        { ruta: '/', texto: 'Inicio', icono: '🏠', exacto: true },
+        { ruta: '/productos', texto: 'Productos', icono: '🛒' },
+        { ruta: '/como-comprar', texto: 'Cómo comprar', icono: '📦' },
+        { ruta: '/quienes-somos', texto: 'Quiénes somos', icono: '🏪' },
+        { ruta: '/contacto', texto: 'Contacto', icono: '📞' },
+        { ruta: '/nuevo-articulo', texto: 'Nuevo artículo', icono: '➕' },
+        { ruta: '/inventario', texto: 'Inventario', icono: '📋' }
+
+    ]
+
+    return (
+        <nav className="menu-inferior">
+            {enlaces.map((enlace) => (
+                <NavLink
+                    key={enlace.ruta}
+                    to={enlace.ruta}
+                    end={enlace.exacto}
+                    className={({ isActive }) =>
+                        `menu-enlace ${isActive ? 'activo' : ''}`
+                    }
+                >
+                    <span className="menu-icono">{enlace.icono}</span>
+                    <span className="menu-texto">{enlace.texto}</span>
+                </NavLink>
+            ))}
+        </nav>
+    )
 }
 
 export default Header
