@@ -44,32 +44,11 @@ function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <div className="app-container">
+              <Header />
                 <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <Productos
-                                productos={productos}
-                                setProductos={setProductos}
-                            />
-                        }
-                    />
-
-                    <Route
-                        path="/productos"
-                        element={
-                            <Productos
-                                productos={productos}
-                                setProductos={setProductos}
-                            />
-                        }
-                    />
-
-                    <Route
-                        path="/producto/:id"
-                        element={<Producto productos={productos} />}
-                    />
-
+                    <Route path="/" element={ <Productos productos={productos} setProductos={setProductos} /> } />
+                    <Route path="/productos" element={ <Productos productos={productos} setProductos={setProductos} />} />
+                    <Route path="/producto/:id" element={<Producto productos={productos} />} />
                     <Route path="/como-comprar" element={<ComoComprar />} />
                     <Route path="/quienes-somos" element={<QuienesSomos />} />
                     <Route path="/contacto" element={<Contacto />} />
@@ -77,8 +56,6 @@ function App() {
                     <Route path="/inventario" element={<Inventario />} />
                     <Route path="*" element={<NoEncontrado />} />
                 </Routes>
-
-                <Header />
             </div>
         </Router>
     )
