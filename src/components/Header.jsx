@@ -1,4 +1,3 @@
-
 import './Header.css'
 import { NavLink } from 'react-router-dom'
 
@@ -10,8 +9,8 @@ function Header() {
         { ruta: '/quienes-somos', texto: 'Quiénes somos', icono: '🏪' },
         { ruta: '/contacto', texto: 'Contacto', icono: '📞' },
         { ruta: '/nuevo-articulo', texto: 'Nuevo artículo', icono: '➕' },
-        { ruta: '/inventario', texto: 'Inventario', icono: '📋' }
-
+        { ruta: '/inventario', texto: 'Inventario', icono: '📋' },
+        { ruta: '/carrito', texto: 'Carrito', icono: '🛍️' }
     ]
 
     return (

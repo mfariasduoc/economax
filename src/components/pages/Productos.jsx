@@ -2,19 +2,18 @@ import { useState, useEffect } from 'react'
 import "./Productos.css"
 import Cargando from '../Cargando'
 import TarjetaProducto from '../TarjetaProducto'
-import datosProductos from '../../datos.json'
+import { useInventario } from '../../context/InventarioContext'
 
-function Productos({ productos, setProductos }) {
+function Productos() {
+    const { articulos } = useInventario()
+
     const [cargando, setCargando] = useState(true)
     const [error, setError] = useState(false)
+
     useEffect(() => {
         const obtenerProductos = async () => {
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000))
-
-                if (productos.length === 0) {
-                    setProductos(datosProductos)
-                }
             } catch (error) {
                 setError(true)
             } finally {
@@ -28,6 +27,7 @@ function Productos({ productos, setProductos }) {
     return (
         <main className="contenido">
             <div className="subtitle"> Listado de productos </div>
+
             {error ? (
                 <div className="alert alert-danger">
                     <span role="img" aria-label="Advertencia"> ⚠️ </span>
@@ -38,16 +38,12 @@ function Productos({ productos, setProductos }) {
             ) : (
                 <>
                     <div className="productos-cont" style={{ flexWrap: 'wrap' }} >
-                        {productos.map(producto => (
+                        {articulos.map(producto => (
                             <TarjetaProducto
                                 key={producto.id}
                                 producto={producto}
                             />
                         ))}
-                    </div>
-
-                    <div style={{ textAlign: "left", marginTop: "20px" }}>
-                        <button className="btn btn-primary"> Mostrar carrito </button>
                     </div>
                 </>
             )}

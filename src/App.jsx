@@ -1,7 +1,4 @@
-
-import { useState, useEffect } from 'react'
 import './App.css'
-
 import Header from './components/Header'
 import Producto from './components/pages/Producto'
 import Productos from './components/pages/Productos'
@@ -10,8 +7,8 @@ import QuienesSomos from './components/pages/QuienesSomos'
 import Contacto from './components/pages/Contacto'
 import NuevoArticulo from './components/pages/NuevoArticulo'
 import Inventario from './components/pages/Inventario'
+import Carrito from './components/pages/Carrito';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import datosProductos from './datos.json'
 
 function NoEncontrado() {
     return (
@@ -21,7 +18,7 @@ function NoEncontrado() {
                 Lo sentimos, la página que buscas no existe.
             </p>
             <img
-                src={`${process.env.PUBLIC_URL}/img/error-404.png`}
+                src={`${import.meta.env.BASE_URL}img/error-404.png`}
                 alt="404 - Página no encontrada"
                 style={{
                     width: "350px",
@@ -35,25 +32,21 @@ function NoEncontrado() {
 }
 
 function App() {
-    const [productos, setProductos] = useState([])
-
-    useEffect(() => {
-        setProductos(datosProductos)
-    }, [])
 
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename={import.meta.env.BASE_URL}>
             <div className="app-container">
               <Header />
                 <Routes>
-                    <Route path="/" element={ <Productos productos={productos} setProductos={setProductos} /> } />
-                    <Route path="/productos" element={ <Productos productos={productos} setProductos={setProductos} />} />
-                    <Route path="/producto/:id" element={<Producto productos={productos} />} />
+                    <Route path="/" element={<Productos />} />
+                    <Route path="/productos" element={<Productos />} />
+                    <Route path="/producto/:id" element={<Producto />} />
                     <Route path="/como-comprar" element={<ComoComprar />} />
                     <Route path="/quienes-somos" element={<QuienesSomos />} />
                     <Route path="/contacto" element={<Contacto />} />
                     <Route path="/nuevo-articulo" element={<NuevoArticulo />} />
                     <Route path="/inventario" element={<Inventario />} />
+                    <Route path="/carrito" element={<Carrito />} />
                     <Route path="*" element={<NoEncontrado />} />
                 </Routes>
             </div>

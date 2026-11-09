@@ -2,120 +2,160 @@
     {
         "id": 1,
         "nombre": "Leche Entera 1 Litro",
+        "marca": "Los Peumos",
+        "tipo": "Lácteos",
         "img": "/img/leche-entera.jpg",
         "precio": 1190
     },
     {
         "id": 2,
         "nombre": "Pan Hallulla 1kg",
+        "marca": "econo-max",
+        "tipo": "Panadería",
         "img": "/img/pan-hallulla.jpg",
         "precio": 1890
     },
     {
         "id": 3,
         "nombre": "Huevos Blancos Red 12 Unidades",
+        "marca": "Agrícola Los Tilos",
+        "tipo": "Huevos",
         "img": "/img/huevos-blancos.jpg",
         "precio": 2490
     },
     {
         "id": 4,
         "nombre": "Arroz Grado 1 1kg",
+        "marca": "Miraflores",
+        "tipo": "Abarrotes",
         "img": "/img/arroz-grado1.jpg",
         "precio": 1450
     },
     {
         "id": 5,
         "nombre": "Fideos Spaghetti 400g",
+        "marca": "Parma",
+        "tipo": "Pastas",
         "img": "/img/fideos-spaghetti.jpg",
         "precio": 890
     },
     {
         "id": 6,
         "nombre": "Aceite Vegetal 1 Litro",
+        "marca": "Miraflores",
+        "tipo": "Aceites",
         "img": "/img/aceite-vegetal.jpg",
         "precio": 2190
     },
     {
         "id": 7,
         "nombre": "Azúcar Granulada 1kg",
+        "marca": "Iansa",
+        "tipo": "Abarrotes",
         "img": "/img/azucar-granulada.jpg",
         "precio": 1350
     },
     {
         "id": 8,
         "nombre": "Café Tradicional Frasco 100g",
+        "marca": "Nescafé",
+        "tipo": "Bebidas",
         "img": "/img/cafe-tradicional.jpg",
         "precio": 4990
     },
     {
         "id": 9,
         "nombre": "Atún en Lomo Lata 170g",
+        "marca": "San José",
+        "tipo": "Conservas",
         "img": "/img/atun-lomo.jpg",
         "precio": 1690
     },
     {
         "id": 10,
         "nombre": "Salsa de Tomate 200g",
+        "marca": "El Vergel",
+        "tipo": "Conservas",
         "img": "/img/salsa-tomate.jpg",
         "precio": 650
     },
     {
         "id": 11,
         "nombre": "Queso Gauda Laminado 250g",
+        "marca": "Hacienda del sur",
+        "tipo": "Lácteos",
         "img": "/img/queso-gauda.jpg",
         "precio": 2990
     },
     {
         "id": 12,
         "nombre": "Mantequilla con Sal 250g",
+        "marca": "Colun",
+        "tipo": "Lácteos",
         "img": "/img/mantequilla.jpg",
         "precio": 2390
     },
     {
         "id": 13,
         "nombre": "Yogurt Batido Surtido 4 Unidades",
+        "marca": "Yes",
+        "tipo": "Lácteos",
         "img": "/img/yogurt-surtido.jpg",
         "precio": 1590
     },
     {
         "id": 14,
         "nombre": "Detergente Líquido 3 Litros",
+        "marca": "Bio Frescura",
+        "tipo": "Limpieza",
         "img": "/img/detergente-liquido.jpg",
         "precio": 7490
     },
     {
         "id": 15,
         "nombre": "Papel Higiénico 4 Rollos Doble Hoja",
+        "marca": "Ovella",
+        "tipo": "Aseo personal",
         "img": "/img/papel-higienico.jpg",
         "precio": 1790
     },
     {
         "id": 16,
         "nombre": "Lavaloza Líquido 750ml",
+        "marca": "Quix",
+        "tipo": "Limpieza",
         "img": "/img/lavaloza.jpg",
         "precio": 1890
     },
     {
         "id": 17,
         "nombre": "Bebida Cola 1.5 Litros",
+        "marca": "Coca-Cola",
+        "tipo": "Bebidas",
         "img": "/img/bebida-cola.jpg",
         "precio": 1990
     },
     {
         "id": 18,
         "nombre": "Jugo en Polvo Sabor Naranja",
+        "marca": "Vivo",
+        "tipo": "Bebidas",
         "img": "/img/jugo-polvo.jpg",
         "precio": 350
     },
     {
         "id": 19,
         "nombre": "Cereales de Avena 500g",
+        "marca": "Santograno",
+        "tipo": "Cereales",
         "img": "/img/avena-tradicional.jpg",
         "precio": 1690
     },
     {
         "id": 20,
         "nombre": "Galletas de Soda Pack 3 Unidades",
+        "marca": "Costa",
+        "tipo": "Galletas",
         "img": "/img/galletas-soda.jpg",
         "precio": 1290
     }
